@@ -6,14 +6,9 @@ import numpy as np
 
 app = Flask(__name__)
 
-
-@app.route("/")
-def index():
-    return "Hello World!"
-
-
 model = tf.keras.models.load_model("models/model.h5")
 class_names = ["Kirmizi_Pistachio", "Siirt_Pistachio"]
+
 
 @app.route("/predict", methods=["POST"])
 def predict():

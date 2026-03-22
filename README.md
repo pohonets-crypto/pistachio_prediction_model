@@ -1,6 +1,9 @@
-## App for prediction of pistachio type.
+# Pistachio Prediction App
 
-This app can recognize which type of pistachio in the picture(Kirmizi/Siirt).
+
+App for prediction of pistachio type.
+
+This app can recognize which type of pistachio in the picture (Kirmizi/Siirt).
 
 ## Get started
 
@@ -34,6 +37,21 @@ Input: 64×64 RGB images, normalized to [0, 1]
 | Flatten       | -                     |
 | Dense         | 128 units, ReLU       |
 | Dense(output) | 2 units, Softmax      |
+
+## Data distribution
+
+Train:      
+  Kirmizi_Pistachio 862     
+  Siirt_Pistachio 641
+
+Validation:     
+  Kirmizi_Pistachio 185     
+  Siirt_Pistachio 137
+
+Test:   
+  Kirmizi_Pistachio 185     
+  Siirt_Pistachio 138
+
 
 ## Results
 

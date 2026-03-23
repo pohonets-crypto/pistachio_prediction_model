@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+    <title>Pistachio Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Pistachio Type Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
